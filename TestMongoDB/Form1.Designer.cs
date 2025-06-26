@@ -1,6 +1,6 @@
 ﻿namespace TestMongoDB
 {
-    partial class Form1
+    partial class FormChocolatin
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,13 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listBoxProduits = new System.Windows.Forms.ListBox();
+            this.buttonAjouter = new System.Windows.Forms.Button();
+            this.buttonModifier = new System.Windows.Forms.Button();
+            this.buttonSupprimer = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // listBoxProduits
+            // 
+            this.listBoxProduits.FormattingEnabled = true;
+            this.listBoxProduits.ItemHeight = 20;
+            this.listBoxProduits.Location = new System.Drawing.Point(12, 12);
+            this.listBoxProduits.Name = "listBoxProduits";
+            this.listBoxProduits.Size = new System.Drawing.Size(483, 404);
+            this.listBoxProduits.TabIndex = 0;
+            // 
+            // buttonAjouter
+            // 
+            this.buttonAjouter.Location = new System.Drawing.Point(12, 422);
+            this.buttonAjouter.Name = "buttonAjouter";
+            this.buttonAjouter.Size = new System.Drawing.Size(99, 33);
+            this.buttonAjouter.TabIndex = 1;
+            this.buttonAjouter.Text = "Ajouter";
+            this.buttonAjouter.UseVisualStyleBackColor = true;
+            // 
+            // buttonModifier
+            // 
+            this.buttonModifier.Location = new System.Drawing.Point(117, 422);
+            this.buttonModifier.Name = "buttonModifier";
+            this.buttonModifier.Size = new System.Drawing.Size(99, 33);
+            this.buttonModifier.TabIndex = 1;
+            this.buttonModifier.Text = "Modifier";
+            this.buttonModifier.UseVisualStyleBackColor = true;
+            // 
+            // buttonSupprimer
+            // 
+            this.buttonSupprimer.Location = new System.Drawing.Point(222, 422);
+            this.buttonSupprimer.Name = "buttonSupprimer";
+            this.buttonSupprimer.Size = new System.Drawing.Size(99, 33);
+            this.buttonSupprimer.TabIndex = 1;
+            this.buttonSupprimer.Text = "Supprimer";
+            this.buttonSupprimer.UseVisualStyleBackColor = true;
+            // 
+            // FormChocolatin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(513, 468);
+            this.Controls.Add(this.buttonSupprimer);
+            this.Controls.Add(this.buttonModifier);
+            this.Controls.Add(this.buttonAjouter);
+            this.Controls.Add(this.listBoxProduits);
+            this.Name = "FormChocolatin";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listBoxProduits;
+        private System.Windows.Forms.Button buttonAjouter;
+        private System.Windows.Forms.Button buttonModifier;
+        private System.Windows.Forms.Button buttonSupprimer;
     }
 }
 

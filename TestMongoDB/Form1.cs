@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestMongoDB
 {
-    public partial class Form1 : Form
+    public partial class FormChocolatin : Form
     {
-        public Form1()
+        public FormChocolatin()
         {
             InitializeComponent();
         }
