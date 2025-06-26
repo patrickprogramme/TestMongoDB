@@ -40,47 +40,51 @@
             this.listBoxProduits.ItemHeight = 20;
             this.listBoxProduits.Location = new System.Drawing.Point(12, 12);
             this.listBoxProduits.Name = "listBoxProduits";
-            this.listBoxProduits.Size = new System.Drawing.Size(483, 404);
+            this.listBoxProduits.Size = new System.Drawing.Size(483, 584);
             this.listBoxProduits.TabIndex = 0;
             // 
             // buttonAjouter
             // 
-            this.buttonAjouter.Location = new System.Drawing.Point(12, 422);
+            this.buttonAjouter.Location = new System.Drawing.Point(12, 612);
             this.buttonAjouter.Name = "buttonAjouter";
             this.buttonAjouter.Size = new System.Drawing.Size(99, 33);
             this.buttonAjouter.TabIndex = 1;
             this.buttonAjouter.Text = "Ajouter";
             this.buttonAjouter.UseVisualStyleBackColor = true;
+            this.buttonAjouter.Click += new System.EventHandler(this.buttonAjouter_Click);
             // 
             // buttonModifier
             // 
-            this.buttonModifier.Location = new System.Drawing.Point(117, 422);
+            this.buttonModifier.Location = new System.Drawing.Point(117, 612);
             this.buttonModifier.Name = "buttonModifier";
             this.buttonModifier.Size = new System.Drawing.Size(99, 33);
             this.buttonModifier.TabIndex = 1;
             this.buttonModifier.Text = "Modifier";
             this.buttonModifier.UseVisualStyleBackColor = true;
+            this.buttonModifier.Click += new System.EventHandler(this.buttonModifier_Click);
             // 
             // buttonSupprimer
             // 
-            this.buttonSupprimer.Location = new System.Drawing.Point(222, 422);
+            this.buttonSupprimer.Location = new System.Drawing.Point(222, 612);
             this.buttonSupprimer.Name = "buttonSupprimer";
             this.buttonSupprimer.Size = new System.Drawing.Size(99, 33);
             this.buttonSupprimer.TabIndex = 1;
             this.buttonSupprimer.Text = "Supprimer";
             this.buttonSupprimer.UseVisualStyleBackColor = true;
+            this.buttonSupprimer.Click += new System.EventHandler(this.buttonSupprimer_Click);
             // 
             // FormChocolatin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 468);
+            this.ClientSize = new System.Drawing.Size(513, 658);
             this.Controls.Add(this.buttonSupprimer);
             this.Controls.Add(this.buttonModifier);
             this.Controls.Add(this.buttonAjouter);
             this.Controls.Add(this.listBoxProduits);
             this.Name = "FormChocolatin";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormChocolatin_Load);
             this.ResumeLayout(false);
 
         }
